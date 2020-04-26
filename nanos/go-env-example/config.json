@@ -1,0 +1,8 @@
+{
+  "Files": ["main"],
+  "Env": {
+    "FOO": "FOO_VALUE",
+    "BAR": "BAR_VALUE"
+  },
+  "Args": ["main"]
+}

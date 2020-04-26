@@ -1,0 +1,21 @@
+{
+  "Files": ["app.py", "imagenet_class_index.json"],
+  "Args": ["app.py"],
+  "Env": {
+    "PYTHONPATH": "/env",
+    "VIRTUAL_ENV": "/env",
+    "PATH": "/env/bin"
+  },
+  "MapDirs": {
+    "/home/matth/.local/share/virtualenvs/torchvision-api-9SC0HGEI": "/env"
+  },
+  "CloudConfig": {
+    "ProjectID": "unikernel-research",
+    "Zone": "us-west3-a",
+    "BucketName": "mattleon-unikernel-research-1-image-artifacts"
+  },
+  "RunConfig": {
+    "Memory": "2G",
+    "Ports": [5000]
+  }
+}
