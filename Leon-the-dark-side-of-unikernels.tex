@@ -7,6 +7,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{url}
+\usepackage{flushend}
 
 \def\BibTeX{{\rm
 B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -18,30 +19,30 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \title{The Dark Side of Unikernels for Machine Learning}
 
 \author{
-  \IEEEauthorblockN{Matthew Leon}
-  \IEEEauthorblockA{
-    \textit{Vanderbilt University}\\
-    Nashville, Tennessee, USA\\
-    matthew.leon@vanderbilt.edu
-  }
+	\IEEEauthorblockN{Matthew Leon}
+	\IEEEauthorblockA{
+		\textit{Vanderbilt University}\\
+		Nashville, Tennessee, USA\\
+		matthew.leon@vanderbilt.edu
+	}
 }
 
 \maketitle
 
 \begin{abstract}
-  This paper analyzes the shortcomings of unikernels as a method
-  of deployment for machine learning inferencing applications as
-  well as provides insights and analysis on future work in this
-  space. The findings of this paper advocate for a tool to enable
-  management of dependent libraries in a unikernel to enable a
-  more ergonomic build process as well as take advantage of the
-  inherent security and perfomance benefits of unikernels.
+	This paper analyzes the shortcomings of unikernels as a method
+	of deployment for machine learning inferencing applications as
+	well as provides insights and analysis on future work in this
+	space. The findings of this paper advocate for a tool to enable
+	management of dependent libraries in a unikernel to enable a
+	more ergonomic build process as well as take advantage of the
+	inherent security and perfomance benefits of unikernels.
 \end{abstract}
 
 \begin{IEEEkeywords}
-  unikernel, virtualization, xen, kernel samepage merging,
-  docker, containerization, lightweight operating system, library
-  operating system, cloud computing
+	unikernel, virtualization, xen, kernel samepage merging,
+	docker, containerization, lightweight operating system, library
+	operating system, cloud computing
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -98,7 +99,7 @@ wanted to understand whether it was feasible to deploy a machine
 learning-trained image classification inference inside a
 Unikernel. To that end, we implemented an image classification
 API capable of receiving an image via HTTP and responding with an
-inference as to the contents of the image. 
+inference as to the contents of the image.
 
 \section{Report Organization}
 
@@ -110,7 +111,7 @@ an overview of the work done in the process of evaluating
 the maturity of unikernels as a modern, lightweight alternative
 to containerization technology. Finally, the paper is concluded
 with an analysis of the hurdles that must be addressed before
-unikernels are sufficient for a modern deployment, 
+unikernels are sufficient for a modern deployment,
 
 \section{Unikernels In-depth}
 
